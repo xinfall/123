@@ -1,0 +1,58 @@
+-- MySQL Workbench Synchronization
+-- Generated: 2019-04-24 18:36
+-- Model: New Model
+-- Version: 1.0
+-- Project: Name of the project
+-- Author: User
+
+1. suschnost GTS Swiftpac 
+
+CREATE TABLE Swiftpac 
+( 
+aggregation 
+VARCHAR2(140) primary key, 
+price NUMBER, 
+modules VARCHAR2(140), 
+description VARCHAR2(140), 
+
+) 
+
+2. suschnost gotovie modyli 
+
+CREATE TABLE modyli 
+( 
+name VARCHAR2(140) primary key, 
+price NUMBER, 
+life VARCHAR(140), 
+installation VARCHAR(140), 
+) 
+
+3. suschnost fundament 
+
+CREATE TABLE foundation 
+( 
+composition VARCHAR2(140) primary key, 
+height VARCHAR2(140), 
+method castings VARCHAR2(140), 
+price NUMBER 
+) 
+
+4. suschnost obshui generator 
+
+CREATE TABLE generator 
+( 
+power VARCHAR2(140) primary key, 
+voltage consumption VARCHAR2(140), 
+mass VARCHAR2(140), 
+storage location VARCHAR2(140) 
+) 
+
+5. suschnost elektroblok 
+
+CREATE TABLE electrical unit 
+( 
+grounding VARCHAR2(140) primary key, 
+frequency VARCHAR2(140), 
+voltage NUMBER(140), 
+structure VARCHAR2(140) 
+)
